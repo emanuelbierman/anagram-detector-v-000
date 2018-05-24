@@ -11,8 +11,7 @@ class Anagram
   end
 
   def match(arr_of_matches)
-    arr_of_matches.select do |word|
-      word.split("").sort == @sourceword.split("").sort
+    arr_of_matches.select {|word| word.split("").sort == @sourceword.split("").sort }
     end
   end
 
